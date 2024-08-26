@@ -21,8 +21,16 @@ for (let i = 0; i < 2; i++) {
         console.log('error');
         i--;
     }
+}
 
-    
+if (personalMovieDB.count < 10) {
+    console.log("Мало фильмов просмотренно");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("Вы разбираетесь в фильмах !");
+} else if (personalMovieDB.count >= 30) {
+    console.log("Вы настоящий киноман !");
+} else {
+    console.log("Произошла ошибка");
 }
 
 console.log(personalMovieDB);
